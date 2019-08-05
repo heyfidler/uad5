@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Jokes {
-    private static List<String> jokes;
-    private static Random random = new Random();
+    private static final List<String> jokes;
+    private static final Random random = new Random();
 
     static {
         jokes = Arrays.asList(
