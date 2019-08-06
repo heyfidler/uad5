@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements EndpointsAsyncTas
 
     @Override
     public void onFinished(String result) {
-        Intent intent =new Intent(this, JokeDisplayActivity.class);
+        Intent intent = new Intent(this, JokeDisplayActivity.class);
 
         Log.i("HERE RESULT: ", result);
 
-        intent.putExtra("joke",result);
+        intent.putExtra("joke", result);
 
         startActivity(intent);
     }
